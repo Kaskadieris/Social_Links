@@ -1,0 +1,126 @@
+html,
+body {
+  font-family: "Fruktur", cursive;
+  color: white;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  height: 100%;
+  margin: 0;
+}
+p {
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+.flex-container {
+  width: auto;
+  height: 100%;
+  display: flex;
+  padding: 0;
+  margin: 5px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: center;
+  font-size: 75px;
+}
+
+.flex-item {
+  text-align: center;
+  font-size: 40px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 500px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 25px;
+}
+
+.fa-heart {
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  display: inline;
+}
+
+.fa-facebook {
+  background: white;
+  color: black;
+  /* background: #3b5998; */
+  /* color: white;*/
+}
+
+.fa-twitter {
+  background: white;
+  color: black;
+  /* background: #55acee;
+  color: white; */
+}
+
+.fa-youtube {
+  background: white;
+  color: black;
+  /* background: #bb0000;
+  color: white; */
+}
+
+.fa-instagram {
+  background: white;
+  color: black;
+  /* color: white;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  ); */
+}
+
+.fa-snapchat-ghost {
+  /* background: #fffc00;
+  color: white; 
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  background: white;
+  color: black;
+}
+
+.fa-spotify {
+  background: white;
+  color: black;
+  /* background: green;
+  color: white; */
+}
+
+.fa:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .fa-heart {
+    display: none;
+  }
+
+  .title-heart {
+    display: block;
+  }
+
+  .flex-container {
+    width: auto;
+    height: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
